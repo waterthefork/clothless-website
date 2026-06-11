@@ -35,4 +35,4 @@ Please don't.
 
 ---
 
-_© The Odin Project. No clothes were harmed in the making of this website._
+_© TO ME. No clothes were harmed in the making of this website._
