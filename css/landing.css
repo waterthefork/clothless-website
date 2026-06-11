@@ -1,0 +1,259 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  min-height: 80vh;
+  padding: 80px 48px;
+}
+
+.hero-content {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  color: white;
+  line-height: 1.1;
+}
+
+.hero-title .accent {
+  color: #fecb66;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.hero-image-frame {
+  background-color: #5e1624;
+  border: 4px solid #450e18;
+  border-radius: 20px;
+  padding: 16px;
+  max-width: 280px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-title {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  text-align: center;
+  color: white;
+  margin-bottom: 32px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background-color: #5e1624;
+  border: 3px solid #450e18;
+  border-radius: 16px;
+  padding: 16px;
+  width: 220px;
+  transition: transform 0.2s;
+}
+
+.feature-item:hover {
+  transform: translateY(-4px);
+}
+
+.feature-image-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #450e18;
+}
+
+.feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-text {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.tag {
+  display: block;
+  font-size: 0.75rem;
+  color: #fecb66;
+  margin-top: 2px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  text-align: center;
+  background-color: #5e1624;
+}
+
+.testimonial-quote {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  color: white;
+  max-width: 600px;
+  line-height: 1.6;
+  quotes: "\201C" "\201D";
+}
+
+.testimonial-quote::before {
+  content: open-quote;
+  font-size: 3rem;
+  color: #fecb66;
+  line-height: 0;
+  vertical-align: -0.5em;
+  margin-right: 4px;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.testimonial-img-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.testimonial-img-wrap img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #450e18;
+}
+
+.testimonial-caption {
+  font-size: 0.75rem;
+  color: #fecb66;
+  font-style: italic;
+}
+
+.testimonial-name {
+  color: #fecb66;
+  font-weight: bold;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cta-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: white;
+}
+
+.cta-subtitle {
+  max-width: 460px;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  font-size: 1.1rem;
+  padding: 14px 36px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  border-bottom: none;
+  background-color: #450e18;
+}
+
+.logo-footer a {
+  font-family: "Rubik Puddles", system-ui;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: rgba(27, 198, 178, 0.7);
+}
+
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 48px 24px;
+    min-height: unset;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-subtitle {
+    margin: 0 auto;
+  }
+
+  .hero-image-frame {
+    max-width: 200px;
+  }
+
+  .feature-item {
+    width: 160px;
+  }
+
+  .feature-image-wrap {
+    height: 140px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    padding: 24px 16px;
+  }
+}

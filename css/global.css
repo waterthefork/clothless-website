@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Gliker-Black";
+  src: url("../fonts/Gliker-Black.woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Patrick Hand", cursive;
+  font-size: 18px;
+  color: rgb(27, 198, 178);
+  background-color: #751d2d;
+}
+
+a {
+  color: rgb(27, 198, 178);
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Gliker-Black", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #5e1624;
+  border-bottom: 4px solid #450e18;
+}
+
+.logo a,
+.logo {
+  font-family: "Rubik Puddles", system-ui;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #fecb66;
+}
+
+.nav-btn {
+  background-color: #fecb66;
+  color: #450e18 !important;
+  font-weight: bold;
+  padding: 6px 18px;
+  border-radius: 20px;
+  border: 2px solid #450e18;
+  transition:
+    background-color 0.2s,
+    transform 0.15s !important;
+}
+
+.nav-btn:hover {
+  background-color: #ffd98f !important;
+  transform: translateY(-1px);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 25px;
+  border: 3px solid #450e18;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    transform 0.15s,
+    background-color 0.2s;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #fecb66;
+  color: #1a0a0e;
+}
+
+.btn-primary:hover {
+  background-color: #ffd98f;
+  transform: translateY(-2px);
+  color: #1a0a0e;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: rgb(27, 198, 178);
+  border-color: rgb(27, 198, 178);
+}
+
+.btn-ghost:hover {
+  background-color: rgba(27, 198, 178, 0.1);
+  transform: translateY(-2px);
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-family: "Patrick Hand", cursive;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fecb66;
+  margin-bottom: 6px;
+}
+
+.eyebrow.center {
+  text-align: center;
+}
+
+section {
+  border-bottom: 6px solid #450e18;
+  padding: 60px 32px;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  section {
+    padding: 40px 16px;
+  }
+}
