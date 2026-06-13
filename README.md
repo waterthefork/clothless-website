@@ -1,6 +1,6 @@
 # CLOTHLESS
 
-World's first invisible fashion brand. Yes, this is a website about nothing. Literally.
+An invisible fashion brand.
 
 ## What is this
 
@@ -10,17 +10,9 @@ A landing page and signup form for a clothing brand that sells no clothing. Buil
 
 - HTML
 - CSS
-- Absolutely zero JavaScript (we are built different)
+- Absolutely zero JavaScript
 - One Google Font that probably didn't need to be a Google Font
 
-## Pages
-
-- `index.html` — the landing page. John Cena endorses us.
-- `signup.html` — for people who want to be on the mailing list for invisible clothes.
-
-## How to run
-
-Open `index.html` in a browser. That's it. That's the whole instruction.
 
 ## Features
 
